@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int reverseNumber(int n);
+
+int main()
+{
+    int n;
+
+    printf("Enter Number: ");
+    scanf("%d", &n);
+
+    printf("Reverse = %d", reverseNumber(n));
+
+    return 0;
+}
+
+int reverseNumber(int n)
+{
+    int rem, rev = 0;
+
+    while(n != 0)
+    {
+        rem = n % 10;
+        rev = rev * 10 + rem;
+        n /= 10;
+    }
+
+    return rev;
+}
+Sample Output
+Enter Number: 1234
+Reverse = 4321
