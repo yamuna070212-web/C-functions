@@ -1,0 +1,70 @@
+#include <stdio.h>
+
+int add(int a, int b);
+int sub(int a, int b);
+int mul(int a, int b);
+float divi(int a, int b);
+
+int main()
+{
+    int a, b, choice;
+
+    printf("1.Add\n2.Subtract\n3.Multiply\n4.Divide\n");
+    printf("Enter Choice: ");
+    scanf("%d", &choice);
+
+    printf("Enter Two Numbers: ");
+    scanf("%d%d", &a, &b);
+
+    switch(choice)
+    {
+        case 1:
+            printf("Sum = %d", add(a, b));
+            break;
+
+        case 2:
+            printf("Difference = %d", sub(a, b));
+            break;
+
+        case 3:
+            printf("Product = %d", mul(a, b));
+            break;
+
+        case 4:
+            printf("Division = %.2f", divi(a, b));
+            break;
+
+        default:
+            printf("Invalid Choice");
+    }
+
+    return 0;
+}
+
+int add(int a, int b)
+{
+    return a + b;
+}
+
+int sub(int a, int b)
+{
+    return a - b;
+}
+
+int mul(int a, int b)
+{
+    return a * b;
+}
+
+float divi(int a, int b)
+{
+    return (float)a / b;
+}
+Sample Output
+1.Add
+2.Subtract
+3.Multiply
+4.Divide
+Enter Choice: 1
+Enter Two Numbers: 10 20
+Sum = 30
