@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int square(int n);
+
+int main()
+{
+    int num;
+
+    printf("Enter Number: ");
+    scanf("%d", &num);
+
+    printf("Square = %d", square(num));
+
+    return 0;
+}
+
+int square(int n)
+{
+    return n * n;
+}
+Sample Output
+Enter Number: 8
+Square = 64
