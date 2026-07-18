@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int sumDigits(int n);
+
+int main()
+{
+    int n;
+
+    printf("Enter Number: ");
+    scanf("%d", &n);
+
+    printf("Sum = %d", sumDigits(n));
+
+    return 0;
+}
+
+int sumDigits(int n)
+{
+    int sum = 0;
+
+    while(n != 0)
+    {
+        sum += n % 10;
+        n /= 10;
+    }
+
+    return sum;
+}
+Sample Output
+Enter Number: 1234
+Sum = 10
