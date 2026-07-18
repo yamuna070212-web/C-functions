@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int add(int, int);
+int sub(int, int);
+int mul(int, int);
+
+int main()
+{
+    int a, b;
+
+    printf("Enter Two Numbers: ");
+    scanf("%d%d", &a, &b);
+
+    printf("Addition = %d\n", add(a, b));
+    printf("Subtraction = %d\n", sub(a, b));
+    printf("Multiplication = %d\n", mul(a, b));
+
+    return 0;
+}
+
+int add(int a, int b)
+{
+    return a + b;
+}
+
+int sub(int a, int b)
+{
+    return a - b;
+}
+
+int mul(int a, int b)
+{
+    return a * b;
+}
+Sample Output
+Enter Two Numbers: 15 5
+Addition = 20
+Subtraction = 10
+Multiplication = 75
