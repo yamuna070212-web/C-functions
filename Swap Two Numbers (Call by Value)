@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+void swap(int a, int b);
+
+int main()
+{
+    int a = 10, b = 20;
+
+    printf("Before Swap: %d %d\n", a, b);
+
+    swap(a, b);
+
+    printf("After Swap: %d %d", a, b);
+
+    return 0;
+}
+
+void swap(int a, int b)
+{
+    int temp = a;
+    a = b;
+    b = temp;
+
+    printf("Inside Function: %d %d\n", a, b);
+}
+Sample Output
+Before Swap: 10 20
+Inside Function: 20 10
+After Swap: 10 20
+
+Note: The values in main() do not change because C uses call by value.
