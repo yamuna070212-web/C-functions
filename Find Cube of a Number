@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int cube(int n);
+
+int main()
+{
+    int num;
+
+    printf("Enter Number: ");
+    scanf("%d", &num);
+
+    printf("Cube = %d", cube(num));
+
+    return 0;
+}
+
+int cube(int n)
+{
+    return n * n * n;
+}
+Sample Output
+Enter Number: 4
+Cube = 64
